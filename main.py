@@ -67,7 +67,7 @@ app = FastAPI()
 # Allow CORS for integration with your MERN frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For production, restrict this to your frontend domain(s)
+    allow_origins=["http://localhost:3000"],  # Allow your React app's URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
